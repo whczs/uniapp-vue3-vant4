@@ -1,0 +1,60 @@
+/* uniapp button type=primary时主题色修改 */
+button[type="primary"] {
+  background-color: #3979ff;
+}
+button[type="primary"].button-hover {
+  background-color: #1957d2;
+}
+button[type="primary"][disabled] {
+  background-color: #9bcaff;
+}
+
+/* 页面底部固定导航栏 */
+.bottom-nav-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140rpx;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99;
+  padding: 0 24rpx;
+
+  .nav-item {
+    height: 84rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: none;
+    border: 1rpx solid #1e7bff;
+    flex: 1;
+    text-align: center;
+    border-radius: 64rpx;
+    line-height: 16px;
+    margin: 0 16rpx;
+
+    &.chat-btn {
+      color: #1e7bff;
+    }
+
+    &.call-btn {
+      background-color: #1e7bff;
+      color: white;
+    }
+
+    .main-text {
+      font-size: 28rpx;
+      font-weight: 600;
+    }
+
+    .sub-text {
+      font-size: 18rpx;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "jiaxiao-mini",
+  "name": "vue3-vant4-demo",
   "version": "0.0.0",
   "scripts": {
     "dev": "uni -p mp-weixin",

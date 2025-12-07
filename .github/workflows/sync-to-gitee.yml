@@ -21,7 +21,7 @@ jobs:
         uses: wearerequired/git-mirror-action@v1  # 使用第三方同步动作
         env:
           # 从 GitHub Secrets 中获取私钥
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           # 源仓库（GitHub）地址（SSH 格式）
           source-repo: git@github.com:whczs/uniapp-vue3-vant4.git
